@@ -1,22 +1,19 @@
 //SCOPING
 //var , let , const
-// function fn(){
-//     var a = "LOL"
-//     let b = "Hi"
+ function fn(){
+     var a = "LOL"
+     let b = "Hi"
+     console.log(a, " ", b)
+     {
+        c = "horse"
+        let d = "apple"
+        console.log(c, " ", d)
+     }
 
-//     console.log(a, " ", b)
-
-
-//     {
-//        c = "horse"
-//        let d = "apple"
-//        console.log(c, " ", d)
-//     }
-
-//     console.log(c)
-//     // console.log(d) not defined
-// }
-// fn();
+     console.log(c)
+     // console.log(d) not defined
+ }
+ fn();
 
 // console.log('Outside:'+c)
 

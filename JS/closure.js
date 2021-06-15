@@ -15,10 +15,10 @@ function outer(a=1,b=2){
 
 outer();
 
-// var result = outer();//outer fn ends, call stack is removed, memory is cleared
+//var result = outer();//outer fn ends, call stack is removed, memory is cleared
 
 // setTimeout(result, 3000)
 
-// result()
+//result()
 
 //capturing

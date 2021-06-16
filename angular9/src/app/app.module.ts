@@ -5,16 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { ThirdComponent } from './third/third.component';
+import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
+import { ContentprojectionComponent } from './contentprojection/contentprojection.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    ChildComponent,
+    ThirdComponent,
+    ContentprojectionComponent,
+    EmployeeDetailComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

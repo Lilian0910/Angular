@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular9';
+  public name = "Angular9 Webinar"
+  public message="";
 }

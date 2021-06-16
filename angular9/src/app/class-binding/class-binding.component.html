@@ -1,3 +1,15 @@
-<h2 class='text-success'>Angular Program--classBinding</h2>
-<h2 [class]='successClass'>Angular Program--classBinding</h2>
-<h2 class='text-success' [class]='specialClass'>Angular Program--classBinding</h2>
+<h2 class='text-success'>Angular Programming</h2>
+<h2 [class]='successClass'>Angular Programming</h2>
+<h2 class='text-success' [class]='specialClass'>Angular Programming</h2>
+<h2 [class.text-danger]="hasError">Hello World</h2>
+<h2 [ngClass]="messageClasses">Hello World</h2>
+
+<h2 [style.color]="'orange'">Style Binding</h2>
+<h2 [style.color]="hasError? 'orange': 'red'">Style Binding</h2>
+<h2 [style.color]="highLight">Style Binding</h2>
+<h2 [ngStyle]="titleStyle">Style Binding</h2>
+<hr>
+<button (click)="onClick()">CLICK</button>
+<hr>
+<input type="text" #myInput name="username" id="username">
+<button (click)="getText(myInput.value)">GetText</button>

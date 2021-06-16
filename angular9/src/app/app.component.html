@@ -1,6 +1,25 @@
 <!--apply bootstrap container-->
-<div class="container">
+<div class="container text-center">
     <h2>The App Component</h2>
-<app-first></app-first>
-<app-class-binding></app-class-binding>
-</div>
+<!-- <app-first></app-first> 
+    <app-class-binding></app-class-binding>
+-->
+    <app-third></app-third> 
+    From the Child: {{name}}
+    
+    <app-child (childEvent)="message=$event" [parentData]="name"></app-child>
+    
+    <app-contentprojection>
+      <h1>Hello World!!!</h1>
+      <button class="btn btn-danger">Say Hello</button>
+      <h3>{{name}}</h3>
+    </app-contentprojection> 
+    <app-contentprojection>
+      <h1>Json</h1>
+      <button class="btn btn-danger">First</button>
+    </app-contentprojection>
+    <app-contentprojection>
+     <h1>Jill</h1>
+     <button class="btn btn-warning">Second</button>
+    </app-contentprojection>
+  </div>

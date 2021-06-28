@@ -5,7 +5,12 @@ import GreetClass from './components/GreetClass';
 import Message from './components/Message';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
-
+import Refdemo from './components/Refdemo';
+import ParentComp from './components/ParentComp';
+import HookState from './components/HookState';
+import { UserProvider } from './components/UserContext';
+import ComponentF from './components/ComponentF';
+import PostList from './components/PostList';
 function App() {
   return (
     <div className="App">
@@ -18,9 +23,16 @@ function App() {
 
         <GreetClass name="Bruce" heroName="Batman"></GreetClass> 
         <Message></Message>
-        */}
+        
         <Counter></Counter>
         <EventBind></EventBind>
+        <HookState></HookState>
+        <UserProvider value="data from contect">
+          <ComponentF></ComponentF>
+        </UserProvider>
+        */}
+        
+        <PostList></PostList>
       </header>
     </div>
   );
